@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'DiGrotest';
+  src: url('DiGrotesk-Regular.woff');
+}
+
+.body {
+  font-family: "DiGrotest", serif;
+}
+
 /*
 Kivi colors come from WERNER’S NOMENCLATURE OF COLOURS By P. Syme
 Reference: https://www.c82.net/werner/ 
@@ -39,4 +48,9 @@ Kings Yellow
     width: 200px;
     margin: auto;
     position: fixed;
+ }
+
+ .text {
+  font-family: 'DiGrotesk';
+  font-size: 40px;
  }
