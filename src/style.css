@@ -34,3 +34,9 @@ Kings Yellow
  .white {
     color: #ffffff;
  }
+
+ .logo {
+    width: 200px;
+    margin: auto;
+    position: fixed;
+ }
