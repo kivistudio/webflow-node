@@ -1,9 +1,12 @@
+/* Awesome font by Threedotstype (https://threedotstype.com/product/di-grotesk/) 
+It is not a free font and all rights belong to Threedotstype.
+*/
 @font-face {
   font-family: 'DiGrotest';
-  src: url('DiGrotesk-Regular.woff');
+  src: url('fonts/DiGrotesk-Regular.woff');
 }
 
-.body {
+body {
   font-family: "DiGrotest", serif;
 }
 
