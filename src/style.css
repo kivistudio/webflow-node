@@ -1,0 +1,36 @@
+/*
+Kivi colors come from WERNER’S NOMENCLATURE OF COLOURS By P. Syme
+Reference: https://www.c82.net/werner/ 
+*/
+
+/*
+Ink black
+*/
+.kivi-black {
+   color: #252024;
+}
+
+/*
+Carmin red
+*/
+.kivi-red {
+    color: #ce536b;
+ }
+
+/*
+Verditter Blue
+*/
+.kivi-green {
+    color: #6fb5a8;
+ }
+
+/*
+Kings Yellow
+*/
+.kivi-yellow {
+    color: #ead665;
+ }
+
+ .white {
+    color: #ffffff;
+ }
