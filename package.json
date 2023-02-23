@@ -1,5 +1,5 @@
 {
-  "name": "webpack-setup",
+  "name": "webpack-template",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -13,6 +13,7 @@
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.38.1",

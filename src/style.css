@@ -2,12 +2,21 @@
 It is not a free font and all rights belong to Threedotstype.
 */
 @font-face {
-  font-family: 'DiGrotest';
-  src: url('fonts/DiGrotesk-Regular.woff');
+  font-family: 'DiGrotesk';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/DiGrotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DiGrotesk';
+  font-style: bold;
+  font-weight: 700;
+  src: url('assets/DiGrotesk-Bold.woff') format('woff');
 }
 
 body {
-  font-family: "DiGrotest", serif;
+  font-family: "DiGrotesk", serif;
 }
 
 /*
@@ -53,7 +62,33 @@ Kings Yellow
     position: fixed;
  }
 
- .text {
-  font-family: 'DiGrotesk';
-  font-size: 40px;
+ img {
+  max-height: 500px;
  }
+
+.image-text {
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+Tip: copied from my Webflow (www.webflow.com) css 
+*/
+container {
+  display: flex;
+  width: 100%;
+  max-width: 940px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: flex-start;
+}
+ 

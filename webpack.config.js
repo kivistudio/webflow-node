@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Kivi is coding",
+      template: "src/index.html",
     }),
   ],
   devServer: {
@@ -19,6 +19,7 @@ module.exports = {
   mode: "development",
   module: {
     rules: [
+      { test: /\.html$/, loader: "html-loader" },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
@@ -27,12 +28,15 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
         generator: {
-          filename: "fonts/[name][ext][query]",
+          filename: "public/[name][ext][query]",
         },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+        generator: {
+          filename: "public/[name][ext][query]",
+        },
       },
     ],
   },
