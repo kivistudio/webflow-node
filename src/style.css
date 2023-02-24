@@ -17,10 +17,11 @@ It is not a free font and all rights belong to Threedotstype.
 
 body {
   font-family: "DiGrotesk", serif;
+  color: rgb(37,32,36);
 }
 
 /*
-Kivi colors come from WERNER’S NOMENCLATURE OF COLOURS By P. Syme
+Kivi colours come from WERNER’S NOMENCLATURE OF COLOURS By P. Syme
 Reference: https://www.c82.net/werner/ 
 */
 
@@ -28,7 +29,7 @@ Reference: https://www.c82.net/werner/
 Ink black
 */
 .kivi-black {
-   color: #252024;
+   color: rgb(37,32,36);
 }
 
 /*
@@ -98,6 +99,7 @@ container {
 }
 
 .col-left {
+  background-color: rgba(37,32,36,0.05);
   width: 250px;
   padding-left: 2em;
   padding-right: 1em;
