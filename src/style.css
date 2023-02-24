@@ -11,8 +11,16 @@ It is not a free font and all rights belong to Threedotstype.
 body {
   font-family: "DiGrotesk", serif;
   color: rgb(37,32,36);
+  font-size: 16px;
 }
 
+h3 {
+  margin-block-start:2em;
+}
+
+p {
+  margin-block-start: 0;
+}
 /*
 Kivi colours come from WERNER’S NOMENCLATURE OF COLOURS By P. Syme
 Reference: https://www.c82.net/werner/ 
@@ -51,8 +59,11 @@ Kings Yellow
  }
 
  .logo {
-    width: 200px;
-    margin: auto;
+    right: 30px;
+    width: 70px;
+    left: auto;
+    top: auto;
+    bottom: 30px;
     position: fixed;
  }
 
@@ -65,44 +76,32 @@ Kings Yellow
   flex-direction: row;
 }
 
-/*
-Tip: copied from my Webflow (www.webflow.com) css 
-*/
-container {
-  display: flex;
-  width: 100%;
-  max-width: 940px;
-  margin-top: 60px;
-  margin-right: auto;
-  margin-left: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: flex-start;
-}
-
 .grid {
   display: grid;
-  grid-template-columns: [sidebar] 250px [article-start] 1fr [end-article];
+  grid-template-columns: [sidebar] 300px [article-start] 1fr [end-article];
   grid-template-rows: auto;
   max-width: 1300px;
 }
 
 .sidebar {
+  padding-left: 2em;
+  padding-right: 2em;
   grid-column-start: 1;
   background-color: rgba(37,32,36,0.05);
+  font-size: smaller;
+}
+
+.sidebar span  {
+  margin-left: -1em;
 }
 
 .article {
+  padding-left: 4em;
   grid-column: article-start;
 }
 
 .heading1 {
+  padding-top: 100px;
   grid-row-start: 1;
 }
 
@@ -132,18 +131,5 @@ container {
 
 .text4 {
   grid-row-start: 8;
-}
-
-.col-left {
-  background-color: rgba(37,32,36,0.05);
-  width: 250px;
-  padding-left: 2em;
-  padding-right: 1em;
-  margin-right: 1em;
-}
-
-.col-right {
-  max-width: 940px;
-  flex: 1;
 }
  

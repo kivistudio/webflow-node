@@ -1,7 +1,7 @@
 import _ from "lodash";
 
 import "./style.css";
-import Icon from "./logo.svg";
+//import Icon from "./logo.svg";
 
 function component() {
   /*const element = document.createElement("div");
