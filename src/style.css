@@ -67,6 +67,14 @@ Kings Yellow
     position: fixed;
  }
 
+ .buttons {
+  right: 30px;
+  left: auto;
+  top: 30px;
+  bottom: auto;
+  position: fixed;
+}
+
  img {
   max-height: 500px;
  }
@@ -132,4 +140,60 @@ Kings Yellow
 .text4 {
   grid-row-start: 8;
 }
- 
+
+
+
+
+
+.switch-my {
+  margin-top: 100px;
+  position: relative;
+  display: block;
+  width: 150px;
+}
+
+.switch-my input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-my {
+  position: absolute;
+  cursor: pointer;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-my:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 6px;
+  bottom: 10px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-my {
+  color: #2196F3;
+}
+
+input:checked + .slider-my:before {
+  height: 75px;
+  width: 75px;
+  -webkit-transform: translateX(64px);
+  -ms-transform: translateX(64px);
+  transform: translateX(64px);
+}
+
+.slider-my:before {
+  border-radius: 50%;
+}
