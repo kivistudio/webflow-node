@@ -91,4 +91,21 @@ container {
   -ms-flex-align: center;
   align-items: flex-start;
 }
+
+.grid {
+  display: flex;
+  align-items: flex-start;
+}
+
+.col-left {
+  width: 250px;
+  padding-left: 2em;
+  padding-right: 1em;
+  margin-right: 1em;
+}
+
+.col-right {
+  max-width: 940px;
+  flex: 1;
+}
  
