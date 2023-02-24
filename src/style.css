@@ -8,13 +8,6 @@ It is not a free font and all rights belong to Threedotstype.
   src: url('assets/DiGrotesk-Regular.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'DiGrotesk';
-  font-style: bold;
-  font-weight: 700;
-  src: url('assets/DiGrotesk-Bold.woff') format('woff');
-}
-
 body {
   font-family: "DiGrotesk", serif;
   color: rgb(37,32,36);
@@ -94,8 +87,20 @@ container {
 }
 
 .grid {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: [sidebar] 250px [article-start] 1fr [end-article];
+  grid-template-rows: auto;
+  max-width: 1300px;
+}
+
+.article {
+  grid-column: article-start;
+
+}
+
+.sidebar {
+  grid-column-end: article-start;
+  background-color: rgba(37,32,36,0.05);
 }
 
 .col-left {
