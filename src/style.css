@@ -93,14 +93,45 @@ container {
   max-width: 1300px;
 }
 
-.article {
-  grid-column: article-start;
-
+.sidebar {
+  grid-column-start: 1;
+  background-color: rgba(37,32,36,0.05);
 }
 
-.sidebar {
-  grid-column-end: article-start;
-  background-color: rgba(37,32,36,0.05);
+.article {
+  grid-column: article-start;
+}
+
+.heading1 {
+  grid-row-start: 1;
+}
+
+.text1 {
+  grid-row-start: 2;
+}
+
+.heading2 {
+  grid-row-start: 3;
+}
+
+.text2 {
+  grid-row-start: 4;
+}
+
+.heading3 {
+  grid-row-start: 5;
+}
+
+.text3 {
+  grid-row-start: 6;
+}
+
+.heading4 {
+  grid-row-start: 7;
+}
+
+.text4 {
+  grid-row-start: 8;
 }
 
 .col-left {
