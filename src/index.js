@@ -1,20 +1,14 @@
-import _ from "lodash";
-
 import "./style.css";
-//import Icon from "./logo.svg";
 
-function component() {
-  /*const element = document.createElement("div");
+let largeSize = document.getElementById("size-toggle");
+largeSize.addEventListener("change", function () {
+  changeTypeSize(largeSize.checked);
+});
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = "great";
-
-  const myIcon = new Image();
-  myIcon.src = Icon;
-  myIcon.classList.add("logo");
-  element.appendChild(myIcon);
-
-  return element;*/
+function changeTypeSize(large) {
+  if (large) {
+    document.body.style["font-size"] = "2em";
+  } else {
+    document.body.style["font-size"] = "1em";
+  }
 }
-
-//document.body.appendChild(component());

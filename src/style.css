@@ -11,7 +11,6 @@ It is not a free font and all rights belong to Threedotstype.
 body {
   font-family: "DiGrotesk", serif;
   color: rgb(37,32,36);
-  font-size: 16px;
 }
 
 h3 {
@@ -58,20 +57,11 @@ Kings Yellow
     color: #ffffff;
  }
 
- .logo {
-    right: 30px;
-    width: 70px;
-    left: auto;
-    top: auto;
-    bottom: 30px;
-    position: fixed;
- }
-
  .buttons {
   right: 30px;
   left: auto;
-  top: 30px;
-  bottom: auto;
+  top: 0px;
+  height: 0px;
   position: fixed;
 }
 
@@ -141,38 +131,36 @@ Kings Yellow
   grid-row-start: 8;
 }
 
-
-
-
-
-.switch-my {
-  margin-top: 100px;
+.switch {
   position: relative;
   display: block;
   width: 150px;
+  height:0px;
 }
 
-.switch-my input { 
+.switch input { 
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.slider-my {
-  position: absolute;
+.slider {
+  width: 150px;
+  position: fixed;
   cursor: pointer;
-  top: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
   color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
-.slider-my:before {
+.slider:before {
   position: absolute;
-  content: "";
+  content: "T";
+  color: rgb(37,32,36);
+  text-align: center;
+  line-height: 30px;
+  vertical-align: center;
+  padding: auto;
   height: 30px;
   width: 30px;
   left: 6px;
@@ -182,18 +170,20 @@ Kings Yellow
   transition: .4s;
 }
 
-input:checked + .slider-my {
-  color: #2196F3;
+input:checked + .slider {
+  color: #6fb5a8;
 }
 
-input:checked + .slider-my:before {
+input:checked + .slider:before {
   height: 75px;
   width: 75px;
+  line-height: 75px;
+  bottom: 16px;
   -webkit-transform: translateX(64px);
   -ms-transform: translateX(64px);
   transform: translateX(64px);
 }
 
-.slider-my:before {
+.slider:before {
   border-radius: 50%;
 }
