@@ -5,38 +5,40 @@ out of the box javascript project template built on webpack5. Template supports 
 
 Last updated: February 2023
 
+Note:
+
+- I have added the fonts to `.gitignore` as they are the property of [Threedotstype](https://threedotstype.com/product/di-grotesk/)
+
 ### What's in the template
 
 - static `index.html` page with a toggle button that enlarges the text on demand. For illustrative purposes the page has information on open source movement.
 - `index.js` script with event listener
 - development mode with `watch` capabilities based on `webpack-dev-server`
+- production build with `.js` and `.css` minimization and source maps
 
 ### Setup
 
 1. Use this repo as a template, following [these instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+
 2. Setup:
 
 ```
 npm install
 ```
 
-3. Build
-
-```
-npm build
-```
-
-and open `/dist/index.html` in your browser
-
-4. ... or run with watch
+3. Run with watch
 
 ```
 npm start
 ```
 
-and open browser at http://localhost:8080 and your changes to src will be automatically picked up when you save
-files from `src`
+and open browser at http://localhost:8080. Your changes to src will be automatically picked up when you save
+files in `/src`
 
-Note:
+3. Build for production
 
-- I have added the fonts to `.gitignore` as they are the property of [Threedotstype](https://threedotstype.com/product/di-grotesk/)
+```
+npm build
+```
+
+and open `./dist/index.html` in your browser
