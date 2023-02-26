@@ -1,6 +1,15 @@
 ## Template for webpack setup for static js page
 
-Basic styled index page that supports images and fonts. Following instructions is not as easy as it seems. I'm trying to produce a template with close to zero functionality that saves you from reading the whole [wepback documentation](https://webpack.js.org/guides/).
+Basic styled index page that supports styling, images and fonts. The purpose of this repo is to provide
+out of the box javascript project template built on webpack5. Template supports development and release and saves you from reading the whole [wepback documentation](https://webpack.js.org/guides/).
+
+Last updated: February 2023
+
+### What's in the template
+
+- static `index.html` page with a toggle button that enlarges the text on demand. For illustrative purposes the page has information on open source movement.
+- `index.js` script with event listener
+- development mode with `watch` capabilities based on `webpack-dev-server`
 
 ### Setup
 
@@ -25,7 +34,8 @@ and open `/dist/index.html` in your browser
 npm start
 ```
 
-and open browser at http://localhost:8080 and your changes to src will be automatically picked up
+and open browser at http://localhost:8080 and your changes to src will be automatically picked up when you save
+files from `src`
 
 Note:
 
