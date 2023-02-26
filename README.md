@@ -4,7 +4,7 @@ Basic styled index page that supports images and fonts. Following instructions i
 
 ### Setup
 
-1. Use this repo as a template, following [these intructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+1. Use this repo as a template, following [these instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 2. Setup:
 
 ```
@@ -29,4 +29,4 @@ and open browser at http://localhost:8080 and your changes to src will be automa
 
 Note:
 
-- I have .gitignored the font files as they are the property of [Threedotstype](https://threedotstype.com/product/di-grotesk/)
+- I have added the fonts to `.gitignore` as they are the property of [Threedotstype](https://threedotstype.com/product/di-grotesk/)
